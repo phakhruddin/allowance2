@@ -32,13 +32,13 @@
 			   		<ImageView id="lastdebit_button" right="60" image="/right242.png" width="30" height="30" />
 				</TableViewRow>
 			</TableViewSection>
-			<!--TableViewSection headerTitle="Last transactions">
+			<TableViewSection headerTitle="Last transactions">
 				<FooterView>
 					<View id="transaction_view" height="250" width="Ti.UI.Fill">
 						<Require src="transaction"></Require>
 					</View>
 				</FooterView>	
-			</TableViewSection-->
+			</TableViewSection>
 		</TableView>
 	</Window>
 	</Tab>

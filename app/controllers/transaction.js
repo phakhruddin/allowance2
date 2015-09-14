@@ -77,17 +77,12 @@ function debitDetailAddRow (date,dateadded,category,amount) {
     
         debitrow.metadata = dateadded; // add metadata info
         
-        var debittable = Ti.UI.createTableView({
-                backgroundColor: "white",
-                separatorStyle :"Titanium.UI.iPhone.TableViewSeparatorStyle.NONE"
-        });
-        debittable.add(debitrow);
-        
       $.transaction_table.appendRow(debitrow);
 };
 
 //fething DB
-var content=Alloy.Globals.fetchingData('debitmodel');
+//var content=Alloy.Globals.fetchingData('debitmodel');
+var content=[{col1:"1/1/1",col2:"1/1/1",col3:"Book",col4:"120"},{col1:"1/2/1",col2:"1/2/1",col3:"Grocery",col4:"130"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"}];
 console.log("debit.js::JSON stringify content: "+JSON.stringify(content));
 for(i=0;i<content.length;i++){
 	debitDetailAddRow(content[i].col1,content[i].col2,content[i].col3,content[i].col4); //display row
