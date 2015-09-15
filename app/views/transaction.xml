@@ -1,4 +1,5 @@
 <Alloy>
 	<TableView id="transaction_table">
+		<TableViewSection id="transaction_table_section" headerTitle="Last transactions"/>
 	</TableView>
 </Alloy>

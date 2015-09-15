@@ -1,0 +1,21 @@
+<Alloy>
+	<Tab  id="debit_tab" title="Debit"  icon="debit.png">
+  <Window id="debit_window" backgroundColor="white" title="Debit">
+ 	<TableView id="debit_table" height="Ti.UI.FILL" backgroundColor="transparent" >
+		<TableViewSection headerTitle="Please enter paid amount:">	
+		  	<FooterView id="debit_footerview">
+		        <View id="input_view" height="300" backgroundColor="#E5E4E4">
+			    	<ImageView top="25" left="20" image="blueline.png"/>
+			    	<Label id="dateLabel" color="red" top="30" left="20" text="Date"/>
+			    	<Label id="catLabel" color="red" top="55" left="20" text="Select Category"/>
+			    	<Label id="costLabel" color="#8DABAE" top="55" left="70%" text="Cost"/>
+		        	<TextArea id="notes_textarea" width="100" left="65%" height="44" top="45" borderWidth="1" borderColor="red" borderRadius="5" 
+	        		color="#888" textAlign="left" value=" " hintText="100">
+	        		</TextArea>	 
+		        </View>
+		    </FooterView>
+	    </TableViewSection>
+    </TableView>
+  </Window> 
+  </Tab>
+</Alloy>

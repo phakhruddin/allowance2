@@ -2,8 +2,8 @@
 	<!--Collection src="debitmodel"/-->
 	  <TabGroup backgroundColor="white">
 	    <Require src="main"/>
-	    <!--Require src="credit"/>  
+	    <Require src="credit"/>  
 	    <Require src="debit"/>   
-	    <Require src="settings"/-->   
+	    <!--Require src="settings"/-->   
 	  </TabGroup>
 </Alloy>

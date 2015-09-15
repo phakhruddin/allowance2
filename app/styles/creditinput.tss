@@ -4,7 +4,6 @@
 
 "#catLabel": {
 	font: {
-		color: "black",
 		fontSize: 24
 	}
 },
@@ -29,5 +28,15 @@
 "TextArea": {
 	font: {
 		left: 20
+	}
+},
+"#dateLabel" : { 
+	font: {
+		fontSize: 24
+	}
+}
+"#timeLabel":{
+		font: {
+		fontSize: 14
 	}
 }
