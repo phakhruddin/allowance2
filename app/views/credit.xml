@@ -5,22 +5,9 @@
    <Window id="credit_window" backgroundColor="white" title="credit">
    	<View top="0" height="55%" >
  	<TableView id="credit_table" height="Ti.UI.FILL" backgroundColor="transparent">
-		<!--TableViewSection headerTitle="Please enter credit amount:">
-		  	<FooterView>
-		        <View id="input_view" height="300" backgroundColor="white">
-			    	<ImageView top="25" left="20" image="/blueline.png"/>
-			    	<Label id="dateLabel" color="red" top="58" left="30" text="Date"/>
-			    	<Label id="timeLabel" color="#0066CC" top="66" left="140" text=""/>
-			    	<Label id="costLabel" color="blue" top="55" left="70%" text="Cost"/>
-		        	<TextArea id="notes_textarea" width="100" left="65%" height="44" top="45" borderWidth="1" borderColor="red" borderRadius="5" 
-	        		color="#888" textAlign="left" value=" ">
-	        		</TextArea>	  
-		        </View>
-		    </FooterView>
-	    </TableViewSection-->
     </TableView>
     </View>
-   <View bottom="0" height="45%" id="creditinput_view" width="Ti.UI.Fill">
+   <View top="55%" height="45%" id="creditinput_view" width="Ti.UI.Fill">
    	<Require src="creditinput"></Require>
    	</View>
   </Window> 

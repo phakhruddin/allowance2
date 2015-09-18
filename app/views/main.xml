@@ -35,7 +35,7 @@
 			</TableViewSection>
 		</TableView>
 		</View>
-		<View bottom="0" height="25%" id="transaction_view" width="Ti.UI.Fill">
+		<View bottom="0" color="#F3F3F3" height="25%" id="transaction_view" width="Ti.UI.Fill">
 				<Require src="transaction"></Require>
 		</View>
 	</Window>

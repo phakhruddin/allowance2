@@ -82,7 +82,7 @@ function debitDetailAddRow (date,dateadded,category,amount) {
 };
 
 //List table contents
-var content=[{col1:"1/1/1",col2:"1/1/1",col3:"Book",col4:"120"},{col1:"1/2/1",col2:"1/2/1",col3:"Grocery",col4:"130"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"}];
+var content=[{col1:"1/1/1",col2:"1/1/1",col3:"Book",col4:"120"},{col1:"1/2/1",col2:"1/2/1",col3:"Grocery",col4:"130"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"},{col1:"1/3/1",col2:"1/3/1",col3:"Travel",col4:"3000"}];
 console.log("debit.js::JSON stringify content: "+JSON.stringify(content));
 function displayRow(e){
 	var totalspent=0;
@@ -96,20 +96,3 @@ function displayRow(e){
 var totalspent=displayRow();
 Titanium.App.Properties.setInt('totalspent',totalspent);
 console.log("debit.js: after row display totalspent: "+totalspent);
-
-var picker = Ti.UI.createPicker({
-  type:Ti.UI.PICKER_TYPE_DATE,
-  minDate:new Date(2009,0,1),
-  maxDate:new Date(2014,11,31),
-  value:new Date(2014,3,12),
-  top:70
-});
-
-picker.addEventListener('change',function(e){
-  Ti.API.info("User selected date: " + e.value.toLocaleString());
-});
-
-picker.selectionIndicator = true;
-
-$.input_view.add(picker);
-

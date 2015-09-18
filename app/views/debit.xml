@@ -2,7 +2,7 @@
 	<Tab  id="debit_tab" title="Debit"  icon="debit.png">
   <Window id="debit_window" backgroundColor="white" title="Debit">
  	<TableView id="debit_table" height="Ti.UI.FILL" backgroundColor="transparent" >
-		<TableViewSection headerTitle="Please enter paid amount:">	
+		<!--TableViewSection headerTitle="Please enter paid amount:">	
 		  	<FooterView id="debit_footerview">
 		        <View id="input_view" height="300" backgroundColor="#E5E4E4">
 			    	<ImageView top="25" left="20" image="blueline.png"/>
@@ -14,8 +14,11 @@
 	        		</TextArea>	 
 		        </View>
 		    </FooterView>
-	    </TableViewSection>
+	    </TableViewSection-->
     </TableView>
+    <View top="55%" height="45%" id="debitinput_view" width="Ti.UI.Fill">
+   	<Require src="debitinput"></Require>
+   	</View>
   </Window> 
   </Tab>
 </Alloy>

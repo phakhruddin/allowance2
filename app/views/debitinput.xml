@@ -1,0 +1,19 @@
+<Alloy>
+    <View id="debitinput_view" height="300" backgroundColor="#E5E4E4">
+    	<ImageView top="25" left="20" image="blueline.png"/>
+    	<Label id="dateLabel" color="red" top="30" left="20" text="Date"/>
+    	<Label id="catLabel" color="red" top="55" left="20" text="Select Category"/>
+    	<Label id="costLabel" color="#8DABAE" top="55" left="70%" text="Cost"/>
+    	<TextArea id="notes_textarea" width="100" left="65%" height="44" top="45" borderWidth="1" borderColor="red" borderRadius="5" 
+		color="#888" textAlign="left" value=" " hintText="100">
+		</TextArea>	
+		<Picker id="picker"
+	      onChange="report"
+	      type="Ti.UI.PICKER_TYPE_DATE"
+	      minDate="2015,4,1"
+	      maxDate="May 1, 2016 12:00:00"
+	      value="2015-09-15T12:00:00"
+	      top="50">
+	    </Picker>  
+    </View>
+</Alloy>
